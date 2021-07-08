@@ -48,10 +48,10 @@ group :development, :mysql do
 end
 
 group :development, :test, :mysql do
-  gem "capybara"
+  gem "capybara", ">= 3.16.1"
   gem "database_cleaner"
-  gem "launchy"
-  gem "poltergeist"
+  gem "launchy", ">= 2.4.3"
+  gem "poltergeist", ">= 1.18.1"
   gem "rspec-rails"
   gem "test-unit"
 end
