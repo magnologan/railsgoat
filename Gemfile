@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 #don't upgrade
-gem "rails", "5.1.7"
+gem "rails", "6.1.7.3"
 
 ruby "2.6.2"
 
@@ -19,9 +19,9 @@ gem "pry-rails" # not in dev group in case running via prod/staging @ a training
 gem "puma"
 gem "rails-perftest"
 gem "rake"
-gem "responders" #For Rails 4.2 # LOCKED DOWN
+gem "responders" , ">= 3.0.0" #For Rails 4.2 # LOCKED DOWN
 gem "ruby-prof"
-gem "sass-rails"
+gem "sass-rails", ">= 5.0.8"
 gem "simplecov", require: false, group: :test
 gem "sqlite3", "1.3.13" # 2/7/2019: LOCKED DOWN
 gem "therubyracer"
