@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 #don't upgrade
-gem "rails", "5.1.7"
+gem "rails", "6.1.7.3"
 
 ruby "2.6.2"
 
@@ -12,16 +12,16 @@ gem "coffee-rails"
 gem "execjs"
 gem "foreman"
 gem "jquery-fileupload-rails"
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.4.0"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
-gem "puma"
+gem "puma", ">= 4.3.12"
 gem "rails-perftest"
-gem "rake"
-gem "responders" #For Rails 4.2 # LOCKED DOWN
+gem "rake", ">= 12.3.3"
+gem "responders" , ">= 3.0.0" #For Rails 4.2 # LOCKED DOWN
 gem "ruby-prof"
-gem "sass-rails"
+gem "sass-rails", ">= 6.0.0"
 gem "simplecov", require: false, group: :test
 gem "sqlite3", "1.3.13" # 2/7/2019: LOCKED DOWN
 gem "therubyracer"
@@ -34,7 +34,7 @@ gem "unicorn"
 # gem 'mailcatcher'
 
 group :development, :mysql do
-  gem "better_errors"
+  gem "better_errors", ">= 2.8.0"
   gem "binding_of_caller"
   gem "bundler-audit"
   gem "guard-livereload"
